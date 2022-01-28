@@ -1,0 +1,71 @@
+<!-- Created by wally
+
+     Name : 🏓Ping pong[ 🎮 Game ]
+     Author : wallyssom Rodrigues
+     version : 1.0
+     
+         
+--><!doctype html>
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scallable=no"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
+  <title>🏓Ping pong[ 🎮 Game ]</title> 
+  <title>By wallyssom</title> 
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Sarabun" rel="stylesheet"> 
+ </head> 
+ <body onload="document.getElementById('container').style.visibility='hidden',document.getElementsByClassName('tab')[0].style.animation='pop .27s ease'"> 
+  <canvas id="canvas"></canvas> <!-- Loader starts --> 
+  <div "container"> 
+   <div id="loader"> <span></span> <span></span> <span></span> <span></span> 
+   </div> 
+   <br> 
+   <br> 
+   <br> 
+   <div id="load">
+     carregando... 
+   </div> 
+  </div> <!--    Loader ends --> 
+  <div class="tab"> 
+   <div id="logo"> 
+    <img src="https://dl.dropbox.com/s/7pgeqxb80cz89ea/RoundPhoto_Jan282022_181835.png?dl=0" alt="Logo"> 
+    <h3>Ping Pong</h3> 
+   </div> 
+   <div id="info"> <b>ⓘ</b> criado por: ©Wallyssom. 
+   </div> 
+   <div class="level"> 
+    <div id="easy" onclick="eas()">
+      jogando com os pés 
+    </div> 
+    <div id="hard" onclick="har()">
+      jogando com uma mão 
+    </div> 
+    <div id="impossible" onclick="imp()"> <i class="fas fa-skull"></i> nem com quatro mãos <i class="fas fa-skull"></i> 
+    </div> 
+    <header> <font size="5" color="black">⬆️⬆️SELECIONE UMA DIFICULDADE⬆️⬆️</font> <font size="2" color="red">O JOGADOR QUE OBTER 10 PONTOS PRIMEIRO VENCE O JOGO.</font> 
+    </header> 
+   </div> 
+  </div> 
+  <div id="status"> 
+   <center> 
+    <div id="result">
+      VOCÊ VENCEU 
+    </div> 
+   </center> 
+   <center> <button onclick="again()">COMEÇAR DE NOVO</button> 
+   </center> 
+  </div> <!--  To get the clicking sound --> 
+  <audio id="music" autoplay loop> 
+   <source src="https://dl-web.dropbox.com/s/9smc0vzt2oe6jfl/Ping%20Pong%20music%202.mp3?dl=0" type="audio/mp3"> 
+  </audio> 
+  <audio id="win" autoplay> 
+   <source src="https://dl-web.dropbox.com/s/rp61o4fyqrr4rzx/victory%20%20sound.mp3?dl=0" type="audio/mp3"> 
+  </audio> 
+  <audio id="lose" autoplay> 
+   <source src="https://dl-web.dropbox.com/s/v92i14096c2syxg/Lose%20Game%20.mp3?dl=0" type="audio/mp3"> 
+  </audio> 
+ 
+</body></html>
